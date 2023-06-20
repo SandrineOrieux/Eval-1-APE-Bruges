@@ -1,0 +1,17 @@
+//typo, variables, function, mixins
+
+//les typos
+$typoHandwritten : 'Dancing Script', cursive;
+$typoClassic : 'Oswald', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+//les medias
+$tabletSize : 768px;
+$descktopSize : 992px;
+
+.typoHand{
+    font-family: $typoHandwritten;
+}
+.typoClassic {
+    font-family: $typoClassic;
+}
