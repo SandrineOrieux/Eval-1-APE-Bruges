@@ -12070,6 +12070,12 @@ textarea.form-control-lg {
   grid-row: 1/2;
   grid-column: 2/3;
 }
+.navHand .hoverText:hover + .hoverhand {
+  display: block;
+}
+.navHand .hoverhand {
+  display: none;
+}
 
 .logo {
   border-radius: 50%;
@@ -12082,4 +12088,8 @@ textarea.form-control-lg {
   width: 18vw;
   max-height: 200px;
   z-index: 0;
+}
+
+.arrowNavBar {
+  border: none;
 }/*# sourceMappingURL=main.css.map */
