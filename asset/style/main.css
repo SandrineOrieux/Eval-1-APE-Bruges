@@ -12061,11 +12061,11 @@ textarea.form-control-lg {
   grid-row: 1/2;
   grid-column: 2/3;
 }
-.navHand .homePageHandHome {
+.navHand .HandHome {
   grid-row: 1/2;
   grid-column: 1/2;
 }
-.navHand .homePageHandEvents {
+.navHand .HandEvents {
   grid-row: 1/2;
   grid-column: 2/3;
 }

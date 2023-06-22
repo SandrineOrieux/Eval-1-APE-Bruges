@@ -7,7 +7,59 @@
     <link rel="stylesheet" href="/asset/style/main.css">
 </head>
 <body>
-
+    <header class="container-xl d-flex flex-wrap justify-content-around justify-content-lg-evenly align-items-center column-gap-1 p-2 p-sm-4 bg-primary text-light typoClassic">
+        <img src="./asset/img/logo.jpg" alt="Logo de l'association" class="d-none d-lg-block logo">
+        <!--pages navbar-->
+        <nav class="flex-grow-1 order-md-1">
+          <ul class="list-unstyled p-lg-3 navHand">
+            <li class="home hoverText"><a href="index.html" class="text-light text-decoration-none fs-4 fs-sm-3 fs-md-2 fs-lg-1">Accueil</a></li>
+            <li class="HandHome hoverhand"><img src="/asset/img/handLHover.jpg" alt="main droite orange" class="hand"></li>
+            <li class="fs-4 fs-sm-3 fs-md-2 fs-lg-1 events hoverText">Evènements</li>
+            <li class="HandEvents "><img src="/asset/img/handRActive.jpg" alt="main droite orange" class="hand"></li>
+          </ul>
+        </nav>
+        <img src="./asset/img/logo.jpg" alt="Logo de l'association" class="m-md-2 m-lg-0 order-md-3 logo">
+        <!--navigation menu on this page-->
+        <nav class="navbar navbar-expand-md flex-grow-1 bg-body-primary order-md-2 navSummary">
+            <div class="container-fluid gap-4">
+                <button class="bg-primary text-light d-md-none arrowNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                </button>
+                <a class="navbar-brand text-light m-0 fs-4 fw-light" href="#">Sommaire<span class="d-none d-md-inline"> :</span></a>
+                <button class="bg-primary text-light d-md-none arrowNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse p-2" id="navbarNav">
+                    <ul class="navbar-nav align-items-center flex-column gap-4">
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="#">
+                                Evènements à venir :
+                            </a>
+                            <ul class="navbar-nav align-items-center flex-column">
+                                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#">Kermesse</a></li>
+                                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#">AG 2023-2024</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="#">
+                                Evènements passés :
+                            </a>
+                            <ul class="navbar-nav align-items-center flex-column">
+                                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#">Marché de Noël</a></li>
+                                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#">Coupe du monde</a></li>
+                                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#">Tournoi d'échec</a></li>
+                                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#">Marché aux fleurs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -15,21 +15,21 @@
 
 </head>
 <body>
-    <header class="container-xl d-flex flex-wrap justify-content-around justify-content-lg-evenly align-items-center column-gap-1 p-2 p-sm-4 bg-primary text-light typoClassic">
+    <header class="container-xl w-auto d-flex flex-wrap justify-content-around justify-content-lg-evenly align-items-center column-gap-1 p-2 p-sm-4 bg-primary text-light typoClassic">
         <img src="./asset/img/logo.jpg" alt="Logo de l'association" class="d-none d-lg-block logo">
         <!--pages navbar-->
-        <nav class="flex-grow-1 order-md-1">
+        <nav class="flex-grow-1 flex-md-grow-0 order-md-1">
           <ul class="list-unstyled p-lg-3 navHand">
-            <li class="fs-4 fs-sm-3 fs-md-2 fs-lg-1 home">Accueil</li>
-            <li class="homePageHandHome"><img src="/asset/img/handLActive.jpg" alt="main droite orange" class="hand"></li>
+            <li class="fs-4 fs-sm-1 fs-md-2 fs-lg-1 home">Accueil</li>
+            <li class="HandHome"><img src="/asset/img/handLActive.jpg" alt="main droite orange" class="hand"></li>
             <li class="events hoverText"><a href="events.html" class="text-light text-decoration-none fs-4 fs-sm-3 fs-md-2 fs-lg-1">Evènements</a></li>
-            <li class="homePageHandEvents hoverhand"><img src="/asset/img/handRHover.jpg" alt="main droite orange" class="hand"></li>
+            <li class="HandEvents hoverhand"><img src="/asset/img/handRHover.jpg" alt="main droite orange" class="hand"></li>
           </ul>
         </nav>
         <img src="./asset/img/logo.jpg" alt="Logo de l'association" class="m-md-2 m-lg-0 order-md-3 logo">
         <!--navigation menu on this page-->
-        <nav class="navbar navbar-expand-md bg-body-primary flex-grow-1  order-md-2 navSummary">
-            <div class="container-fluid ">
+        <nav class="navbar navbar-expand-md bg-body-primary order-md-2 navSummary">
+            <div class="container-fluid justify-content-around">
                 <button class="bg-primary text-light d-md-none arrowNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
@@ -41,7 +41,7 @@
                         <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
                     </svg>
                 </button>
-                <div class="collapse navbar-collapse p-2 float-none" id="navbarNav">
+                <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav align-items-center flex-column">
                         <li class="nav-item">
                             <a class="nav-link text-light fw-light" aria-current="page" href="#news">News</a>
