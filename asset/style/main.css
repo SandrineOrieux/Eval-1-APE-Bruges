@@ -12050,7 +12050,6 @@ textarea.form-control-lg {
   margin: 0;
   align-items: center;
   text-align: center;
-  gap: 3vw;
 }
 .navHand .home {
   z-index: 1;
@@ -12089,12 +12088,13 @@ textarea.form-control-lg {
 .logo {
   border-radius: 50%;
   min-width: 60px;
+  max-width: 150px;
   width: 20vw;
 }
 
 .hand {
   width: 18vw;
-  max-height: 200px;
+  max-width: 150px;
   z-index: 0;
 }
 
