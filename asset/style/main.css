@@ -12077,11 +12077,19 @@ textarea.form-control-lg {
   display: none;
 }
 
+.navSummary {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navSummary {
+    width: auto;
+  }
+}
 .logo {
   border-radius: 50%;
-  min-height: 80px;
-  height: 15vw;
-  max-height: 200px;
+  min-width: 60px;
+  width: 20vw;
 }
 
 .hand {
