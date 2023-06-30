@@ -60,52 +60,74 @@
       </div>
     </nav>
   </header>
-  <main class="container-xl text-primary">
+  <main class="container-xl text-primary typoHand">
     <div class="row row-cols-1 row-cols-md-2">
       <h1 class="col-md-12 text-center typoClassic text-black">Bienvenue sur le site de l'association des parents d'élève de Bruges-Capbis-Mifaget</h1>
+      
       <!--new-->
-      <section class="col">
-        <img src="./asset/img/carnet-table-horizontal.jpg" alt="cahier" class="w-100">
-        <h2 id="news" class="">News</h2>
-        <p class="">Organisation de la kermesse</p>
-        <button type="button" class="btn btn-primary rounded-pill"><a href="page2.html" class="text-light text-decoration-none">En savoir plus</a></button>
-        <p class="">Bilan du marché aux fleurs</p>
-        <button class="btn btn-primary rounded-pill"><a href="page2.html" class="text-light text-decoration-none">En savoir plus</a></button>
+      <section class="col section">
+        <img src="./asset/img/carnet-table-horizontal.jpg" alt="cahier" class="w-100 backGround">
+        <div class="leftPage">
+          <h2 id="news" class="title">News</h2>
+        </div>
+        
+        <div class="rightPage">
+          <p class="">Organisation de la kermesse</p>
+          <button type="button" class="btn btn-primary rounded-pill"><a href="page2.html" class="text-light text-decoration-none">En savoir plus</a></button>
+          <p class="">Bilan du marché aux fleurs</p>
+          <button class="btn btn-primary rounded-pill"><a href="page2.html" class="text-light text-decoration-none">En savoir plus</a></button>
+        </div>
       </section>
+
       <!--presentation-->
-      <section class="col">
-        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100">
-        <h2 id="presentation" class="" >Présentation</h2>
+      <section class="col section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100 backGround">
+
+        <div class="leftPage">
+        <h2 id="presentation" class="title" >Présentation</h2>
         <!--provisional photos: to ask the metraises-->
-        <img src="./asset/img/cinema.jpg" alt="cinema d'Arudy" class="w-25">
-        <img src="./asset/img/jeux.jpg" alt="équipements pédagogique" class="w-25">
-        <p class="">Nous sommes une association indépendante à but
-          non lucratif (Loi 1901). Nous sommes des parents d'élèves bénévoles et indépendants des 
-          représentants des parents d'élèves.<br><br>
-          Nous <em>récoltons des fonds</em>  pour que toutes les sorties scolaires de
-          tous les élèves de la meternelle et de l'école primaire puissent être gratuites, participer 
-          à l'achat de matériel et organiser une kermesse chaque année.</p>
+        <img src="./asset/img/cinema.jpg" alt="cinema d'Arudy" class="w-50">
+        <img src="./asset/img/jeux.jpg" alt="équipements pédagogique" class="w-50">  
+        </div>
+
+        <div class="rightPage">
+          <p class="">Nous sommes une association indépendante à but
+            non lucratif (Loi 1901). Nous sommes des parents d'élèves bénévoles et indépendants des 
+            représentants des parents d'élèves.<br><br>
+            Nous <em>récoltons des fonds</em>  pour que toutes les sorties scolaires de
+            tous les élèves de la meternelle et de l'école primaire puissent être gratuites, participer 
+            à l'achat de matériel et organiser une kermesse chaque année.</p>
+        </div>
       </section>
+
       <!--president-->
-      <section class="col">
-        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100">
-        <h2 id="president" class="">Le mot du <br> président</h2>
-        <img src="./asset/img/Wanted.jpg" alt="affiche recherche parents" class="w-25">
-        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing
+      <section class="col section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100 backGround">
+        <div class="leftPage">
+          <h2 id="president" class="title">Le mot du <br> président</h2>
+          <img src="./asset/img/Wanted.jpg" alt="affiche recherche parents" class="w-25">
+        </div>
+
+        <div class="rightPage">
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing
           elit. <br> Integer lacus metus, imperdiet ac consectetur at, suscipit eget neque.<br><br> 
           Nulla facilisi. Nulla tempor turpis vitae tortor pharetra elementum. Nullam et varius risus.
           Phasellus non scelerisque urna, vel sollicitudin orci.  </p>
-        <p class=""><strong>Rejoingnez-nous !</strong></p>
+          <p class=""><strong>Rejoingnez-nous !</strong></p>
+        </div>
       </section>
+
       <!--général assembly-->
-      <section class="col">
-        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100">
-        <h2 id ="AG" class="">Le compte rendu<br> de l'AG 
-          <br>2022</h2>
-        <object data="./asset/img/PV Assemblée Générale 2022-2.pdf" type="application/pdf"
-        width="100px" height="200px" class="w-50"></object>
-        <a href="./asset/img/PV Assemblée Générale 2022-2.pdf" class=""> 
+      <section class="col section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100 backGround">
+        <div class="leftPage">
+          <h2 id ="AG" class="title">Le compte rendu de l'Assemblée Générale 2022-2023</h2>
+        </div>
+
+        <div class="rightPage">
+          <a href="./asset/img/PV Assemblée Générale 2022-2.pdf" class="content"> 
           Téléchargez-moi</a>
+        </div>       
       </section>
     </div>
     <!--arrow Bootstrap Icons top page-->
@@ -114,7 +136,6 @@
         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
       </svg>
     </a>
-    
   </main>
   <footer class="container-xl fixed-bottom bg-primary text-light typoClassic fw-light">
     <div class="row m-0 p-0 align-items-center">
