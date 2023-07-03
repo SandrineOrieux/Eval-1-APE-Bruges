@@ -47,13 +47,13 @@
               <a class="nav-link text-light fw-light" aria-current="page" href="#news">News</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-light fw-light" href="#AG">Compte rendu de l'AG</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-light fw-light" href="#presentation">Présentation</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light fw-light" href="#president">Le mot du président</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light fw-light" href="#AG">Compte rendu de l'AG</a>
             </li>
           </ul>
         </div>
@@ -62,76 +62,117 @@
   </header>
   <main class="container-xl text-primary typoHand">
     <div class="row row-cols-1 row-cols-md-2">
-      <h1 class="col-md-12 text-center typoClassic text-black">Bienvenue sur le site de l'association des parents d'élève de Bruges-Capbis-Mifaget</h1>
+      <h1 class="col-md-12 text-center typoClassic text-black py-3 m-0">Bienvenue sur le site de l'association des parents d'élève de Bruges-Capbis-Mifaget</h1>
       
       <!--new-->
-      <section class="col section">
-        <img src="./asset/img/carnet-table-horizontal.jpg" alt="cahier" class="w-100 backGround">
-        <div class="leftPage">
-          <h2 id="news" class="title">News</h2>
+      <section class="col p-0 my-2 section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100 backGround">
+        <div class="leftPage d-flex flex-column justify-content-center align-items-center">
+          <h2 id="news" class="m-0">News</h2>
         </div>
         
-        <div class="rightPage">
-          <p class="">Organisation de la kermesse</p>
-          <button type="button" class="btn btn-primary rounded-pill"><a href="page2.html" class="text-light text-decoration-none">En savoir plus</a></button>
-          <p class="">Bilan du marché aux fleurs</p>
-          <button class="btn btn-primary rounded-pill"><a href="page2.html" class="text-light text-decoration-none">En savoir plus</a></button>
-        </div>
-      </section>
-
-      <!--presentation-->
-      <section class="col section">
-        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100 backGround">
-
-        <div class="leftPage">
-        <h2 id="presentation" class="title" >Présentation</h2>
-        <!--provisional photos: to ask the metraises-->
-        <img src="./asset/img/cinema.jpg" alt="cinema d'Arudy" class="w-50">
-        <img src="./asset/img/jeux.jpg" alt="équipements pédagogique" class="w-50">  
-        </div>
-
-        <div class="rightPage">
-          <p class="">Nous sommes une association indépendante à but
-            non lucratif (Loi 1901). Nous sommes des parents d'élèves bénévoles et indépendants des 
-            représentants des parents d'élèves.<br><br>
-            Nous <em>récoltons des fonds</em>  pour que toutes les sorties scolaires de
-            tous les élèves de la meternelle et de l'école primaire puissent être gratuites, participer 
-            à l'achat de matériel et organiser une kermesse chaque année.</p>
-        </div>
-      </section>
-
-      <!--president-->
-      <section class="col section">
-        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100 backGround">
-        <div class="leftPage">
-          <h2 id="president" class="title">Le mot du <br> président</h2>
-          <img src="./asset/img/Wanted.jpg" alt="affiche recherche parents" class="w-25">
-        </div>
-
-        <div class="rightPage">
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. <br> Integer lacus metus, imperdiet ac consectetur at, suscipit eget neque.<br><br> 
-          Nulla facilisi. Nulla tempor turpis vitae tortor pharetra elementum. Nullam et varius risus.
-          Phasellus non scelerisque urna, vel sollicitudin orci.  </p>
-          <p class=""><strong>Rejoingnez-nous !</strong></p>
+        <div class="rightPage ps-3 d-flex flex-column justify-content-center align-items-center">
+          <p class="m-0 lh-1 text-center typoClassic  ps-3 pe-1">Organisation de la kermesse</p>
+          <button type="button" class="d-none btn btn-primary rounded-pill p-0"><a href="page2.html" class="text-light text-decoration-none">En savoir plus</a></button>
+          <a class="pb-3" href="events.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg></a>
+          <p class="m-0 lh-1 text-center typoClassic  ps-3 pe-1">Bilan du marché aux fleurs</p>
+          <button type="button" class="d-none btn btn-primary rounded-pill p-0"><a href="events.html" class="text-light text-decoration-none">En savoir plus</a></button>
+          <a href="events.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </a>
         </div>
       </section>
 
       <!--général assembly-->
-      <section class="col section">
-        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100 backGround">
-        <div class="leftPage">
-          <h2 id ="AG" class="title">Le compte rendu de l'Assemblée Générale 2022-2023</h2>
+      <section class="col p-0 my-2 section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround">
+        <div class="leftPage d-flex flex-column justify-content-center align-items-center">
+          <h2 id ="AG" class="w-75 p-0 m-0 text-wrap text-center">Le compte rendu de l'A-G 2022 2023</h2>
         </div>
 
-        <div class="rightPage">
-          <a href="./asset/img/PV Assemblée Générale 2022-2.pdf" class="content"> 
+        <div class="rightPage d-flex flex-column justify-content-around align-items-center">
+          <a href="./asset/img/PV Assemblée Générale 2022-2.pdf" class="ps-3 pe-1 w-75 typoClassic text-decoration-none text-center" target="_blank"> 
           Téléchargez-moi</a>
         </div>       
       </section>
+
+      <!--presentation-->
+      <section class="col p-0 my-2 section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="w-100 backGround">
+        <div class="leftPage d-flex flex-column justify-content-center align-items-center">
+          <h2 id="presentation" class="m-0" >Présentation</h2>
+          
+          
+          <p class="m-0 lh-1"></p>
+          <!--provisional photos: to ask the metraises-->
+          <img src="./asset/img/cinema.jpg" alt="cinema d'Arudy" class="d-none w-50">
+          <img src="./asset/img/jeux.jpg" alt="équipements pédagogique" class="d-none w-50">  
+        </div>
+
+        <div class="rightPage d-flex flex-column justify-content-around align-items-center">
+          <p class="lh-1 m-0 ps-3 pe-1 text-center typoClassic">Nous sommes une association indépendante à but
+            non lucratif (Loi 1901).</p>
+          <p class="d-none"> Nous sommes une association indépendante à but
+            non lucratif (Loi 1901). Nous sommes des parents d'élèves bénévoles et indépendants des 
+            représentants des parents d'élèves.<br>
+            Nous <em>récoltons des fonds</em>  pour que toutes les sorties scolaires de
+            tous les élèves de la meternelle et de l'école primaire puissent être gratuites, participer 
+            à l'achat de matériel et organiser une kermesse chaque année.
+          </p>
+          <a data-bs-toggle="collapse" href="#collapsePresentation" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <div class="collapse" id="collapsePresentation">
+        <div class="typoClassic">
+          Nous sommes composé de parents d'élèves bénévoles, indépendants des 
+          représentants des parents d'élèves. Nous <em>récoltons des fonds</em>  pour que toutes les sorties scolaires de
+          tous les élèves de la meternelle et de l'école primaire puissent être gratuites, participer 
+          à l'achat de matériel et organiser une kermesse chaque année.
+        </div>
+      </div>
+
+      <!--president-->
+      <section class="col p-0 my-2 section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround">
+        <div class="leftPage d-flex flex-column justify-content-center align-items-center">
+          <h2 id="president" class="title m-0">Le mot du <br> président</h2>
+          
+        </div>
+
+        <div class="rightPage d-flex flex-column justify-content-around align-items-center">
+          <p class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. <br> Integer lacus metus, imperdiet ac consectetur at, suscipit eget neque.<br><br> 
+          Nulla facilisi. Nulla tempor turpis vitae tortor pharetra elementum. Nullam et varius risus.
+          Phasellus non scelerisque urna, vel sollicitudin orci.  </p>
+          <p class="typoClassic text-center ps-3 pe-1 m-0">Rejoingnez-nous !</p>
+          <a data-bs-toggle="collapse" href="#collapseWanted" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <div class="collapse" id="collapseWanted">
+        <div class="typoClassic">
+          <img src="./asset/img/Wanted.jpg" alt="affiche recherche parents" class="w-100">
+        </div>
+      </div>
+      
     </div>
     <!--arrow Bootstrap Icons top page-->
-    <a href="#up" class="position-fixed bottom-25 end-0">
+    <a href="#up" class="position-fixed bottom-18 end-0">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
       </svg>
