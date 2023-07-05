@@ -8,13 +8,5 @@ $warning : #FD861E;
 //button
 $btn-font-family: $typoHandwritten;
 
-//positon value for arrow up
-$position-values: (
-  0: 0,
-  18: 18%,
-  50: 50%,
-  100: 100%
-);
-
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "../../node_modules/bootstrap/scss/bootstrap"

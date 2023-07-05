@@ -15,3 +15,24 @@
     border: none;
 }
 
+
+.arrowUp{
+    right: 0;
+    bottom: 125px;
+}
+
+@media screen and (min-width: $xLarge) {
+    .arrowUp{
+        right: auto;
+        left: 50%;
+        transform: translate(1800%);
+    }
+}
+
+@media screen and (min-width: $xxLarge) {
+    .arrowUp{
+        right: auto;
+        left: 50%;
+        transform: translate(2100%);
+    }
+}
