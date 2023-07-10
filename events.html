@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ape de Bruges</title>
+  <title>Ape de Bruges : évènements</title>
   <link rel="stylesheet" href="/asset/style/main.css">
 </head>
 <body>
-  <header class="container-xl d-flex flex-wrap justify-content-around justify-content-lg-evenly align-items-center column-gap-1 p-2 p-sm-4 bg-primary text-light typoClassic">
+  <header id="up" class="container-xl d-flex flex-wrap justify-content-around justify-content-lg-evenly align-items-center column-gap-1 p-2 p-sm-4 bg-primary text-light typoClassic">
     <img src="./asset/img/logo.jpg" alt="Logo de l'association" class="d-none d-lg-block logo">
     <!--pages navbar-->
     <nav class="flex-grow-1 order-md-1">
@@ -40,19 +40,20 @@
                 Evènements à venir :
               </a>
               <ul class="navbar-nav align-items-center flex-column">
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#">Kermesse</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#">AG 2023-2024</a></li>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#AG">AG 2023-2024</a></li>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#christmas">Marché de noël</a></li>
               </ul>
             </li>
             <li class="nav-item ">
               <a class="nav-link text-light" href="#">
                 Evènements passés :
               </a>
-              <ul class="navbar-nav align-items-center flex-column">
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#">Marché de Noël</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#">Coupe du monde</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#">Tournoi d'échec</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#">Marché aux fleurs</a></li>
+              <ul class="navbar-nav align-items-center flex-column ">
+                
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#foot">Coupe du monde</a></li>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#chess">Tournoi d'échec</a></li>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#flowers">Marché aux fleurs</a></li>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#fair">kermesse</a></li>
               </ul>
             </li>
           </ul>
@@ -60,8 +61,66 @@
       </div>
     </nav>
   </header>
-  <main>
-    <p></p>
+  <main  class="container-xl text-primary typoHand">
+    <div  class="row row-cols-1 row-cols-md-2">
+      <h1 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2023-2024 Evènements à venir : </h1>
+      <!--AG-->
+      <section itemscope itemtype="http://schema.org/Event" id="AG" class="col p-0 py-2 p-md-2 section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center">
+          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Assemblée Générale</h2>
+          <img itemprop="image" src="./asset/img/Wanted 2023.jpg" height="200" alt="affiche recherche parents" class="d-none d-sm-block"/>
+        </div>
+
+        <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
+          <ul class="list-unstyled lh-sm typoClassic text-center">
+            <li itemprop="startDate" content="2023-10-19T20:00">Le 19/10/2023</li>
+            <li>à 20h</li>
+            <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle Jean Condou</li></span>
+          </ul>
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none">En savoir plus</a></button>
+          <a class="pb-3 d-sm-none" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!--Marché de noël-->
+      <section itemscope itemtype="http://schema.org/Event" id="christmas" class="col p-0 py-2 p-md-2 section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center">
+          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Marché de Noël</h2>
+          <img itemprop="image" src="./asset/img/afficheNoel2023.JPG" height="200" alt="affiche recherche parents" class="d-none d-sm-block"/>
+        </div>
+
+        <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
+          <ul class="list-unstyled lh-sm typoClassic text-center">
+            <li itemprop="startDate" content="2023-12-10T10:00">Le 10/12/2023</li>
+            <li>à 10h</li>
+            <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle de l'asile</li></span>
+          </ul>
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none">En savoir plus</a></button>
+          <a class="pb-3 d-sm-none" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      
+    </div>
+    <div  class="row row-cols-1 row-cols-md-2">
+      <h2 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2022-2023. Evènements passés :</h2>
+    </div>
+    <!--arrow Bootstrap Icons top page-->
+    <a href="#up" class="position-fixed z-3 arrowUp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </a>
   </main>
   <footer class="container-xl bg-primary text-light typoClassic fw-light">
     <div class="row m-0 p-0 align-items-center">
