@@ -67,9 +67,9 @@
       <!--AG-->
       <section itemscope itemtype="http://schema.org/Event" id="AG" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
-        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center">
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
           <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Assemblée Générale</h2>
-          <img itemprop="image" src="./asset/img/Wanted 2023.jpg" height="200" alt="affiche recherche parents" class="d-none d-sm-block"/>
+          <img itemprop="image" src="./asset/img/Wanted 2023.jpg" alt="affiche recherche parents" class="d-none d-sm-block w-75 "/>
         </div>
 
         <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
@@ -78,8 +78,8 @@
             <li>à 20h</li>
             <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle Jean Condou</li></span>
           </ul>
-          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none">En savoir plus</a></button>
-          <a class="pb-3 d-sm-none" href="#">
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm" data-bs-toggle="modal" data-bs-target="#AGModal">En savoir plus</button>
+          <a class="pb-3 d-sm-none" href="#AGModal" data-bs-toggle="modal" >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
@@ -87,22 +87,42 @@
           </a>
         </div>
       </section>
-      <!--Marché de noël-->
+      <!--AG Modal-->
+      <div class="modal fade text-primary" id="AGModal" tabindex="-1" aria-labelledby="AGModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 typoHand" id="AGModalLabel">Assemblée générale 2023-2024</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
+              <img itemprop="image" src="./asset/img/Wanted 2023.jpg" alt="affiche recherche parents" class="w-75"/>
+              <p>Comme tous les ans, l'assemblée générale à lieu en début d'année scolaire. Tous les parents d'élèves sont conviés, sans obligation d'inscription, pas de frais pour faire partis de l'association.</p>
+              <p>A l'ordre du jour : présentation de l'association, bilan de l'année 2022-2023, montant de la donation annuelle aux écoles, renouvellement du bureau et/ou élections du nouveau bureau, renouvellement ou changement du contrat d'assurance, liste des évènements pour cette année, organisation du marché de Noël.</p>
+              <p>Venez-nombreux</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal" aria-label="Close">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Christmas-->
       <section itemscope itemtype="http://schema.org/Event" id="christmas" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
-        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center">
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
           <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Marché de Noël</h2>
-          <img itemprop="image" src="./asset/img/afficheNoel2023.JPG" height="200" alt="affiche recherche parents" class="d-none d-sm-block"/>
+          <img itemprop="image" src="./asset/img/afficheNoel2023.JPG" alt="affiche du marché de noel" class="d-none d-sm-block w-75"/>
         </div>
 
         <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
           <ul class="list-unstyled lh-sm typoClassic text-center">
-            <li itemprop="startDate" content="2023-12-10T10:00">Le 10/12/2023</li>
+            <li itemprop="startDate" content="2023-12-10T10:00">Le 10/12/2023 (date provisoire)</li>
             <li>à 10h</li>
             <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle de l'asile</li></span>
           </ul>
-          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none">En savoir plus</a></button>
-          <a class="pb-3 d-sm-none" href="#">
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm" data-bs-toggle="modal" data-bs-target="#christmasModal">En savoir plus</button>
+          <a class="pb-3 d-sm-none" href="#christmasModal" data-bs-toggle="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
@@ -110,16 +130,34 @@
           </a>
         </div>
       </section>
+      <!--christmas Modal-->
+      <div class="modal fade text-primary" id="christmasModal" tabindex="-1" aria-labelledby="christmasModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 typoHand" id="christmasModalLabel">Marché de Noël 2023</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
+              <img itemprop="image" src="./asset/img/afficheNoel2023.JPG" alt="affiche du marché de noel" class="w-75"/>
+              <p>En cours d'organisation : date et heure provisoires</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal" aria-label="Close">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>
       
     </div>
     <div  class="row row-cols-1 row-cols-md-2">
       <h2 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2022-2023. Evènements passés :</h2>
-      <!--Coupe du monde-->
+      <!--Foot-->
       <section itemscope itemtype="http://schema.org/Event" id="foot" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
-        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center">
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
           <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Coupe du monde</h2>
-          <img itemprop="image" src="./asset/img/coupe-du-monde.JPG" height="200" alt="affiche recherche parents" class="d-none d-sm-block"/>
+          <img itemprop="image" src="./asset/img/coupe-du-monde.JPG"  alt="affiche de la retransmission de la coupe du monde" class="d-none d-sm-block w-75"/>
         </div>
   
         <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
@@ -128,8 +166,8 @@
             <li>à 15h30</li>
             <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle de l'asile</li></span>
           </ul>
-          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none">En savoir plus</a></button>
-          <a class="pb-3 d-sm-none" href="#">
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm" data-bs-toggle="modal" data-bs-target="#footModal">En savoir plus</button>
+          <a class="pb-3 d-sm-none" href="#footModal" data-bs-toggle="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
@@ -137,12 +175,29 @@
           </a>
         </div>
       </section>
-      <!--Tournoi d'echec-->
+      <!--Foot Modal-->
+      <div class="modal fade text-primary" id="footModal" tabindex="-1" aria-labelledby="footModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 typoHand" id="footModalLabel">Coupe du monde</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
+              <p>Malgré la défaite de la France, l'ambiance était bonne et festive. Merci pour votre participation !</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal" aria-label="Close">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--chess-->
       <section itemscope itemtype="http://schema.org/Event" id="chess" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
-        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center">
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
           <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Tournoi d'échec</h2>
-          <img itemprop="image" src="./asset/img/Affiche tournoi Bruges.png" height="200" alt="affiche recherche parents" class="d-none d-sm-block"/>
+          <img itemprop="image" src="./asset/img/Affiche tournoi Bruges.png"  alt="affiche du tournoi d'échec" class="d-none d-sm-block w-75"/>
         </div>
   
         <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
@@ -151,8 +206,8 @@
             <li>à 10h</li>
             <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle de l'asile</li></span>
           </ul>
-          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none">En savoir plus</a></button>
-          <a class="pb-3 d-sm-none" href="#">
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm" data-bs-toggle="modal" data-bs-target="#chessModal">En savoir plus</button>
+          <a class="pb-3 d-sm-none" href="#footModal" data-bs-toggle="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
@@ -160,12 +215,35 @@
           </a>
         </div>
       </section>
-      <!--Marché aux fleurs-->
+      <!--chess modal-->
+      <div class="modal fade text-primary" id="chessModal" tabindex="-1" aria-labelledby="chessModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 typoHand" id="chessModalLabel">Tournoi d'échec</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
+              <img itemprop="image" src="./asset/img/echec1.jpg" alt="salle de l'asile" class="w-75"/>
+              <img itemprop="image" src="./asset/img/echec2.jpg" alt="salle de l'asile" class="w-75"/>
+              <img itemprop="image" src="./asset/img/medaille.jpg" alt="trophée et médailles" class="w-75"/>
+              <img itemprop="image" src="./asset/img/echecEnfants.jpg" alt="enfants participants" class="w-75"/>
+              <p>Merci à Samy Aït Chaouche, aux 3 maîtresses des écoles de Bruges-Capbis-Mifaget et aux parents, qui ont donné de leur temps pour que les enfants puissent passer un bon moment ! Vu leurs sourires la mission est accomplie. Ils repartent tous avec une belle médaille.</p>
+              <a href="https://bearn-echecs.fr/" target="_blank">Organisé avec l'école d'échecs de Nay</a>
+              <img itemprop="image" src="./asset/img/logoEchec.JPG" alt="logo de l'école d'échec" class="w-25"/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal" aria-label="Close">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Flowers-->
       <section itemscope itemtype="http://schema.org/Event" id="flowers" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
-        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center">
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
           <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Marché aux fleurs</h2>
-          <img itemprop="image" src="./asset/img/marché-aux-fleurs.JPG" height="200" alt="affiche recherche parents" class="d-none d-sm-block"/>
+          <img itemprop="image" src="./asset/img/marché-aux-fleurs.JPG" alt="affiche du marché aux fleurs" class="d-none d-sm-block w-75"/>
         </div>
   
         <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
@@ -174,8 +252,8 @@
             <li>à 9h</li>
             <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">Sous la mairie</li></span>
           </ul>
-          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none">En savoir plus</a></button>
-          <a class="pb-3 d-sm-none" href="#">
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm" data-bs-toggle="modal" data-bs-target="#flowersModal">En savoir plus</button>
+          <a class="pb-3 d-sm-none" href="#flowersModal" data-bs-toggle="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
@@ -183,12 +261,32 @@
           </a>
         </div>
       </section>
-      <!--Marché aux fleurs-->
+      <!--Flowers Modal-->
+      <div class="modal fade text-primary" id="flowersModal" tabindex="-1" aria-labelledby="flowersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 typoHand" id="flowersModalLabel">Marché aux fleurs 2023</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
+              <img itemprop="image" src="./asset/img/marché-aux-fleurs.JPG" alt="affiche du marché aux fleurs" class="w-75"/>
+              <p>De belles fleurs, pour nous redonner le sourire! Merci d'avoir d'avoir participez!</p>
+              <a href="https://jardineriesylvie.fr/" target="_blank">Organisé avec la Jardinerie Sylvie</a>
+              <img itemprop="image" src="./asset/img/LogoSylvie.JPG" alt="logo jardinerie Sylvie" class="w-25"/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal" aria-label="Close">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fair-->
       <section itemscope itemtype="http://schema.org/Event" id="fair" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
-        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center">
-          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Kermesse</h2>
-          <img itemprop="image" src="./asset/img/kermesse.JPG" height="200" alt="affiche recherche parents" class="d-none d-sm-block"/>
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
+          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">La Kermesse</h2>
+          <img itemprop="image" src="./asset/img/kermesse.JPG" alt="affiche de la kermesse" class="d-none d-sm-block w-75"/>
         </div>
   
         <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
@@ -197,8 +295,8 @@
             <li>à 15h</li>
             <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle des sports</li></span>
           </ul>
-          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none">En savoir plus</a></button>
-          <a class="pb-3 d-sm-none" href="#">
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"><a href="#" class="text-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#fairModal">En savoir plus</a></button>
+          <a class="pb-3 d-sm-none" href="#fairModal" data-bs-toggle="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
@@ -206,7 +304,29 @@
           </a>
         </div>
       </section>
-
+      <!--Fair Modal-->
+      <div class="modal fade text-primary" id="fairModal" tabindex="-1" aria-labelledby="fairModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 typoHand" id="fairModalLabel">Kermesse</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
+              <video src="./asset/img/finalKermesse.mp4" type="video/mp4" class="object-fit-contain w-100" controls ></video>
+              <p>Bravo aux enfants et aux maîtresses pour leur beau spectacle ! </p>
+              <p>Nous souhaitons une bonne retraite à Mme.Casau ! Pour l'ocassion nous avons préparé une bière spéciale avec la brasserie Mandragot. De nombreux anciens élèves était au rendez-vous, la maîtresses était surprise.</p>
+              <img itemprop="image" src="./asset/img/cuveeCasau.jpg" alt="etiquette de la bière" class="w-75"/>
+              <p>Super spectacle, beaucoup de rires, des enfants heureux, merci au clown Patrick Dubois</p>
+              <img itemprop="image" src="./asset/img/clown.jpg" alt="spectacle du clown" class="w-75"/>
+              <p>L'association remercie tous les parents bénévoles, nos partenaires et les maîtresses pour cette merveilleuse journée !</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal" aria-label="Close">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
     
     
