@@ -12086,7 +12086,7 @@ textarea.form-control-lg {
   }
 }
 main {
-  margin-bottom: 150px;
+  margin-bottom: 180px;
 }
 main .section {
   display: grid;
@@ -12133,8 +12133,8 @@ footer {
 }
 
 .arrowUp {
-  right: 0;
-  bottom: 125px;
+  right: auto;
+  bottom: 50%;
 }
 
 @media screen and (min-width: 1200px) {
