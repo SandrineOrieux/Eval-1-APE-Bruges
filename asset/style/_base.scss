@@ -1,4 +1,4 @@
-//typo, variables, function, mixins, map
+//typo, variables, class générale
 
 //les typos
 $typoHandwritten : 'Dancing Script', cursive;
@@ -11,7 +11,7 @@ $largeSize : 992px;
 $xLarge : 1200px;
 $xxLarge : 1400px;
 
-
+//class générale
 .typoHand{
     font-family: $typoHandwritten;
 }

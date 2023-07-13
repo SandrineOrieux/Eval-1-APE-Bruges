@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /README.md/
+
+
+Sitemap: https://ape-de-bruges.go.yo.fr/sitemap.xml

@@ -12112,7 +12112,7 @@ main .section .rightPage {
 }
 
 footer {
-  height: 120px;
+  min-height: 120px;
 }
 
 .logo {
@@ -12150,4 +12150,7 @@ footer {
     left: 50%;
     transform: translate(2100%);
   }
+}
+.legal {
+  font-size: 10px;
 }/*# sourceMappingURL=main.css.map */
