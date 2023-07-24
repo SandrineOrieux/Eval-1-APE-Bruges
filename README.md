@@ -28,9 +28,9 @@ Ce site fait deux pages
 - `asset/style` : Répertoire contenant les fichiers CSS générés à partir des fichiers Sass et les fichiers sass. Il contient :
   -`_base.scss` : la surcouche de style des typos, variables et classes générales.
   -`_component.scss` : la surcouche de style des images, buttons, flèches.
-  -`_custum.scss` : les variables modifiées de bootstrap
+  -`_custum.scss` : les variables modifiées de bootstrap.
   -`_layout.scss` : la surcouche de style du header, main, footer, menu de navigation et les grids.
-  -`main.scss` : import des fichier de style à compiler.
+  -`main.scss` : import des fichiers de style à compiler.
 - `asset/img` : Répertoire pour les images et medias du site.
 
 

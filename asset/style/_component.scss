@@ -1,4 +1,4 @@
-//images, buttons, flèches
+//images, buttons, flèches.
 .logo{
     border-radius: 50%;
     min-width: 60px;
@@ -17,8 +17,8 @@
 
 
 .arrowUp{
-    right: auto;
     bottom: 50%;
+    right: 1%;
 }
 
 @media screen and (min-width: $xLarge) {
@@ -36,6 +36,14 @@
         transform: translate(2100%);
     }
 }
+
 .legal{
     font-size: 10px;
+}
+
+.contacts{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/handRHover.jpg);
 }
