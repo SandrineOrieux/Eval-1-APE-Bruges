@@ -51,7 +51,7 @@
                 Evènements à venir :
               </a>
               <ul class="navbar-nav align-items-center flex-column">
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#AG">AG 2023-2024</a></li>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#AG">Sapins et chocolats</a></li>
                 <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#christmas">Marché de noël</a></li>
               </ul>
             </li>
@@ -76,31 +76,37 @@
   <main  class="container-xl text-primary typoHand">
     <div  class="row row-cols-1 row-cols-md-2">
       <h1 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2023-2024 Evènements à venir : </h1>
-      <!--AG-->
+      <!--event 1-->
       <section itemscope itemtype="http://schema.org/Event" id="AG" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
         <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
-          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Assemblée Générale</h2>
-          <img itemprop="image" src="./asset/img/Wanted 2023-2024.jpg" alt="affiche recherche parents" class="d-none d-sm-block w-75 "/>
+          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Sapins et chocolats</h2>
+          <img itemprop="image" src="./asset/img/sapin-chocolat.png" alt="téléchargement du pdf " class="d-none d-sm-block w-75 "/>
+          <button type="button" class="btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"> <a href="./asset/img/SAPINS-CHOCOLATS 2023.pdf" class="ps-3 pe-1 text-white text-decoration-none text-center" target="_blank"> 
+            Téléchargez-moi</a></button>
         </div>
 
         <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
-          <ul class="list-unstyled lh-sm typoClassic text-center">
-            <li itemprop="startDate" content="2023-10-19T20:00">Le 29/09/2023</li>
-            <li>à 21h</li>
-            <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle Jean Condou</li></span>
-          </ul>
-          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm" data-bs-toggle="modal" data-bs-target="#AGModal">En savoir plus</button>
+          <!--<ul class="list-unstyled lh-sm typoClassic text-center">
+            <li itemprop="startDate" content="2023-10-19T20:00">Le 10/12/2023</li>
+            <li>à partir de 10h</li>
+            <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle de l'asile</li></span>
+          </ul>-->
+          <div class="rightPage d-flex flex-column justify-content-around align-items-center">
+            <p class="ps-3 pe-1 typoClassic text-decoration-none text-center" target="_blank"> 
+            Téléchargez le bon de commande des sapins et des chocolats. Distribution le 10/12/2023 lors du marché de noël. <span class="d-none d-md-inline">Bon à déposer dans la boite aux lettres de l'Ape (Maternelle) avec le règlement.</span> </p>
+          </div>
+          <!--<button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm" data-bs-toggle="modal" data-bs-target="#AGModal">En savoir plus</button>
           <a class=" d-sm-none" href="#AGModal" data-bs-toggle="modal" >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewbox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
             </svg>
-          </a>
+          </a>-->
         </div>
       </section>
-      <!--AG Modal-->
-      <div class="modal fade text-primary" id="AGModal" tabindex="-1" aria-labelledby="AGModalLabel" aria-hidden="true">
+      <!--Modal event 1-->
+      <!--<div class="modal fade text-primary" id="AGModal" tabindex="-1" aria-labelledby="AGModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -108,7 +114,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
-              <img itemprop="image" src="./asset/img/Wanted 2023.jpg" alt="affiche recherche parents" class="w-75"/>
+              <img itemprop="image" src="./asset/img/Wanted 2023-2024.jpg" alt="affiche recherche parents" class="w-75"/>
               <p>Comme tous les ans, l'assemblée générale à lieu en début d'année scolaire. Tous les parents d'élèves sont conviés, sans obligation d'inscription, pas de frais pour faire partis de l'association.</p>
               <p>A l'ordre du jour : présentation de l'association, bilan de l'année 2022-2023, montant de la donation annuelle aux écoles, renouvellement du bureau et/ou élections du nouveau bureau, renouvellement ou changement du contrat d'assurance, liste des évènements pour cette année.</p>
               <p>Venez-nombreux</p>
@@ -118,8 +124,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <!--Christmas-->
+      </div>-->
+      <!--event 2-->
       <section itemscope itemtype="http://schema.org/Event" id="christmas" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
         <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
@@ -129,7 +135,7 @@
 
         <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
           <ul class="list-unstyled lh-sm typoClassic text-center">
-            <li itemprop="startDate" content="2023-12-10T10:00">Le 10/12/2023 (date provisoire)</li>
+            <li itemprop="startDate" content="2023-12-10T10:00">Le 10/12/2023</li>
             <li>à 10h</li>
             <span itemprop="location" itemscope itemtype="http://schema.org/Place"><li itemprop="name">à la salle de l'asile</li></span>
           </ul>
@@ -142,7 +148,7 @@
           </a>
         </div>
       </section>
-      <!--christmas Modal-->
+      <!--Modal event 2-->
       <div class="modal fade text-primary" id="christmasModal" tabindex="-1" aria-labelledby="christmasModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -151,8 +157,8 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
-              <img itemprop="image" src="./asset/img/afficheNoel2023.JPG" alt="affiche du marché de noel" class="w-75"/>
-              <p>En cours d'organisation : date et heure provisoires</p>
+              <!--<img itemprop="image" src="./asset/img/afficheNoel2023.JPG" alt="affiche du marché de noel" class="w-75"/>
+              --><p>En cours d'organisation...</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal" aria-label="Close">Quitter</button>
