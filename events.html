@@ -66,8 +66,7 @@
                 Evènements à venir :
               </a>
               <ul class="navbar-nav align-items-center flex-column">
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event1">Marché de Noël</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event2">Tournoi d'échecs</a>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event1">Assemblée Générale</a>
                 </li>
               </ul>
             </li>
@@ -75,14 +74,13 @@
               <a class="nav-link text-light" href="#">
                 Evènements passés :
               </a>
-              <!--
+
               <ul class="navbar-nav align-items-center flex-column ">
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#foot">Coupe du monde</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#chess">Tournoi d'échec</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#flowers">Marché aux fleurs</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6"  href="#fair">kermesse</a></li>
+                <!-- <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event2">Marché de Noël</a></li>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event3">Tournoi d'échecs</a>
+                </li> -->
               </ul>
-            -->
+
             </li>
           </ul>
         </div>
@@ -92,9 +90,67 @@
 
   <main class="container-xl text-primary typoHand">
     <div class="row row-cols-1 row-cols-md-2">
-      <h1 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2023-2024 Evènements à venir : </h1>
+      <h1 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2024-2025 Evènements à venir : </h1>
       <!--event 1-->
       <section itemscope itemtype="http://schema.org/Event" id="event1" class="col p-0 py-2 p-md-2 section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround" />
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
+          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Assemblée générale</h2>
+          <img itemprop="image" src="./asset/img/Wanted 2024-2025.jpg" alt="affiche du marché aux fleurs "
+            class="d-none d-sm-block w-75 " />
+        </div>
+
+        <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
+          <ul class="list-unstyled lh-sm typoClassic text-center">
+            <li itemprop="startDate" content="2023-12-10T10:00">Le 27/09/2024</li>
+            <li>à partir de 20h30</li>
+            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+              <li itemprop="name">Salle Jean Condou à Bruges</li>
+            </span>
+            <li>Nous avons besoin de parents bénévoles!
+            </li>
+          </ul>
+
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"
+            data-bs-toggle="modal" data-bs-target="#modalEvent1">En savoir plus</button>
+          <a class=" d-sm-none" href="#modalEvent1" data-bs-toggle="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle"
+              viewbox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!--Modal event 1-->
+      <div class="modal fade text-primary" id="modalEvent1" tabindex="-1" aria-labelledby="modalEvent1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 typoHand" id="modalEvent1Label">Assemblée générale</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
+              <img itemprop="image" src="./asset/img/Wanted 2024-2025.jpg" alt="affiche marché du marché aux fleurs"
+                class="w-75" />
+              <p> </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal"
+                aria-label="Close">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row row-cols-1 row-cols-md-2">
+      <h2 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2024-2025. Evènements passés :</h2>
+
+      <!-- <section itemscope itemtype="http://schema.org/Event" id="event2" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround" />
         <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
           <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Marché de Noël</h2>
@@ -124,14 +180,14 @@
             </svg>
           </a>
         </div>
-      </section>
+      </section> -->
       <!--Modal event 1-->
-      <div class="modal fade text-primary" id="modalEvent1" tabindex="-1" aria-labelledby="modalEvent1Label"
+      <!-- <div class="modal fade text-primary" id="modalEvent2" tabindex="-1" aria-labelledby="modalEvent2Label"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 typoHand" id="modalEvent1Label">Marché de Noël</h1>
+              <h1 class="modal-title fs-5 typoHand" id="modalEvent2Label">Marché de Noël</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
@@ -174,9 +230,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!--event 2-->
-      <section itemscope itemtype="http://schema.org/Event" id="event2" class="col p-0 py-2 p-md-2 section">
+      <!-- <section itemscope itemtype="http://schema.org/Event" id="event3" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround" />
         <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
           <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Le tournoi d'échecs</h2>
@@ -205,14 +261,14 @@
             </svg>
           </a>
         </div>
-      </section>
+      </section> -->
       <!--Modal event 2-->
-      <div class="modal fade text-primary" id="ModalEvent2" tabindex="-1" aria-labelledby="ModalEvent2Label"
+      <!-- <div class="modal fade text-primary" id="ModalEvent3" tabindex="-1" aria-labelledby="ModalEvent3Label"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 typoHand" id="ModalEvent2Label">Tournoi d'échecs</h1>
+              <h1 class="modal-title fs-5 typoHand" id="ModalEvent3Label">Tournoi d'échecs</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
@@ -228,11 +284,7 @@
             </div>
           </div>
         </div>
-      </div>
-
-    </div>
-    <div class="row row-cols-1 row-cols-md-2">
-      <h2 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2023-2024. Evènements passés :</h2>
+      </div> -->
       <!--
        <section itemscope itemtype="http://schema.org/Event" id="foot" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround"/>
