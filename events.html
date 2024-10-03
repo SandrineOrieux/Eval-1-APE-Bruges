@@ -66,8 +66,7 @@
                 Evènements à venir :
               </a>
               <ul class="navbar-nav align-items-center flex-column">
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event1">Assemblée Générale</a>
-                </li>
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event2">Marché de Noël</a></li>
               </ul>
             </li>
             <li class="nav-item ">
@@ -76,9 +75,8 @@
               </a>
 
               <ul class="navbar-nav align-items-center flex-column ">
-                <!-- <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event2">Marché de Noël</a></li>
-                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event3">Tournoi d'échecs</a>
-                </li> -->
+                <li class="nav-item"><a class="nav-link text-light fw-light fs-6" href="#event1">Assemblée Générale</a>
+                </li>
               </ul>
 
             </li>
@@ -91,6 +89,91 @@
   <main class="container-xl text-primary typoHand">
     <div class="row row-cols-1 row-cols-md-2">
       <h1 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2024-2025 Evènements à venir : </h1>
+      <section itemscope itemtype="http://schema.org/Event" id="event2" class="col p-0 py-2 p-md-2 section">
+        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround" />
+        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
+          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Marché de Noël</h2>
+          <img itemprop="image" src="./asset/img/sapin-chocolat.png" alt="affiche du marché de Noël "
+            class="d-none d-sm-block w-75 " />
+        </div>
+
+        <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
+          <ul class="list-unstyled lh-sm typoClassic text-center">
+            <li itemprop="startDate" content="2024-12-1T10:00">Le 1/12/2024</li>
+            <li>à partir de 10h</li>
+            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+              <li itemprop="name">à la salle de l'asile</li>
+            </span>
+            <li>De nombreux exposants et des annimations toutes la journée!</li>
+          </ul>
+
+          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"
+            data-bs-toggle="modal" data-bs-target="#modalNoel">En savoir plus</button>
+          <a class=" d-sm-none" href="#modalNoel" data-bs-toggle="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle"
+              viewbox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!-- Modal event 1 -->
+      <div class="modal fade text-primary" id="modalNoel" tabindex="-1" aria-labelledby="modalNoelLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 typoHand" id="modalNoelLabel">Marché de Noël</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
+              <img itemprop="image" src="./asset/img/sapin-chocolat.png" alt="affiche marché de Noël" class="w-75" />
+              <p>Comme tous les ans, Nous organisons le marché de noël. De nombreux exposants sont au rendez-vous : en
+                cours d'organisation...</p>
+              <!-- <ul>
+                <li><a href="https://lafermepourtau.fr/" target="_blank">Ferme Pourtau</a> : propose du fromage de
+                  brebis, vache et mixte.</li>
+                <li><a href="https://www.fermeloustalot.fr/" target="_blank">Ferme Loustalot</a> : propose des
+                  saucisses, du jambon blanc, du jambon de pays...</li>
+                <li><a href="https://www.albanlaban.fr/" target="_blank">Maison Alban Laban</a> : propose du foie gras,
+                  des rillettes, de la terrine de canard...</li>
+                <li><a href="https://www.facebook.com/p/La-Bergerie-du-Landistou-100063674523822/" target="_blank">La
+                    bergerie du landistou</a> : Yaourt, glace, buche de noël au lait de brebis...</li>
+                <li>Michel Poueymirou Bouchet : propose du miel.</li>
+                <li>Le pain de Guillaume : propose du pain nature, aux graines, complet, de meteil, aux noisettes...
+                </li>
+                <li><a href="https://fr-fr.facebook.com/MicrobrasserieMandragot" target="_blank">Microbrasserie
+                    Mandragot</a> : propose des bières blondes, ambrées, IPA...</li>
+                <li>Liliane Chatry : propose des bijoux.</li>
+                <li>Le salon de couture : propose de la couture.</li>
+                <li>Emilie Bertran : propose des attrapes rêves.</li>
+                <li>Un exposant propose des décorations végétales.</li>
+                <li>Cathye créations : propose des créations en textile.</li>
+                <li><a href="https://www.facebook.com/groups/1010161159702776/permalink/1068084777243747/"
+                    target="_blank">Yamoussa</a> : propose des samoussas fait maison</li>
+                <li>L'antre de la tortue : propose des articles de décorations.</li>
+                <li><a href="https://www.facebook.com/julienMontauban65/" target="_blank">Couteaux de l'Ouzom</a> :
+                  propose des couteaux.</li>
+                <li><a href="https://www.facebook.com/lessavonsdelisarce/" target="_blank">Les savons de Lisarce</a> :
+                  propose des savons à l'huile végétale bio et lait d'ânesse.</li>
+                <li>Vente des productions des élèves des écoles primaires et maternelles de Bruges-Capbis-Mifaget !!!
+                </li>
+              </ul> -->
+              <p>De nombreuses annimations et un snack tout au long de la journée.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal"
+                aria-label="Close">Quitter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2">
+      <h2 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2024-2025. Evènements passés :</h2>
       <!--event 1-->
       <section itemscope itemtype="http://schema.org/Event" id="event1" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround" />
@@ -136,7 +219,7 @@
             <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
               <img itemprop="image" src="./asset/img/Wanted 2024-2025.jpg" alt="affiche marché du marché aux fleurs"
                 class="w-75" />
-              <p> </p>
+              <p>Merci pour votre participation : 15 bénévoles présents et 3 absents ! </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal"
@@ -146,91 +229,7 @@
         </div>
       </div>
 
-    </div>
-    <div class="row row-cols-1 row-cols-md-2">
-      <h2 class="col-md-12 text-center typoClassic text-black py-3 m-0">Saison 2024-2025. Evènements passés :</h2>
 
-      <!-- <section itemscope itemtype="http://schema.org/Event" id="event2" class="col p-0 py-2 p-md-2 section">
-        <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround" />
-        <div class="leftPage h-100 d-flex flex-column justify-content-around align-items-center pb-1">
-          <h2 itemprop="name" class="w-75 m-0 lh-1 text-center">Marché de Noël</h2>
-          <img itemprop="image" src="./asset/img/afficheNoel2024.jpg" alt="affiche du marché de Noël "
-            class="d-none d-sm-block w-75 " />
-        </div>
-
-        <div class="rightPage w-75 h-100 d-flex flex-column justify-content-center align-items-center">
-          <ul class="list-unstyled lh-sm typoClassic text-center">
-            <li itemprop="startDate" content="2023-12-10T10:00">Le 10/12/2023</li>
-            <li>à partir de 10h</li>
-            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-              <li itemprop="name">à la salle de l'asile</li>
-            </span>
-            <li>De nombreux exposants et des annimations toutes la journée!</li>
-          </ul>
-
-          <button type="button" class="d-none d-sm-block btn btn-primary rounded-pill p-0 px-sm-3 lh-sm"
-            data-bs-toggle="modal" data-bs-target="#modalEvent1">En savoir plus</button>
-          <a class=" d-sm-none" href="#modalEvent1" data-bs-toggle="modal">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle"
-              viewbox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-              <path
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
-              </path>
-            </svg>
-          </a>
-        </div>
-      </section> -->
-      <!--Modal event 1-->
-      <!-- <div class="modal fade text-primary" id="modalEvent2" tabindex="-1" aria-labelledby="modalEvent2Label"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 typoHand" id="modalEvent2Label">Marché de Noël</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex flex-column align-items-center text-black typoClassic gap-3">
-              <img itemprop="image" src="./asset/img/afficheNoel2024.jpg" alt="affiche marché de Noël" class="w-75" />
-              <p>Comme tous les ans, Nous organisons le marché de noël. De nombreux exposants sont au rendez-vous :</p>
-              <ul>
-                <li><a href="https://lafermepourtau.fr/" target="_blank">Ferme Pourtau</a> : propose du fromage de
-                  brebis, vache et mixte.</li>
-                <li><a href="https://www.fermeloustalot.fr/" target="_blank">Ferme Loustalot</a> : propose des
-                  saucisses, du jambon blanc, du jambon de pays...</li>
-                <li><a href="https://www.albanlaban.fr/" target="_blank">Maison Alban Laban</a> : propose du foie gras,
-                  des rillettes, de la terrine de canard...</li>
-                <li><a href="https://www.facebook.com/p/La-Bergerie-du-Landistou-100063674523822/" target="_blank">La
-                    bergerie du landistou</a> : Yaourt, glace, buche de noël au lait de brebis...</li>
-                <li>Michel Poueymirou Bouchet : propose du miel.</li>
-                <li>Le pain de Guillaume : propose du pain nature, aux graines, complet, de meteil, aux noisettes...
-                </li>
-                <li><a href="https://fr-fr.facebook.com/MicrobrasserieMandragot" target="_blank">Microbrasserie
-                    Mandragot</a> : propose des bières blondes, ambrées, IPA...</li>
-                <li>Liliane Chatry : propose des bijoux.</li>
-                <li>Le salon de couture : propose de la couture.</li>
-                <li>Emilie Bertran : propose des attrapes rêves.</li>
-                <li>Un exposant propose des décorations végétales.</li>
-                <li>Cathye créations : propose des créations en textile.</li>
-                <li><a href="https://www.facebook.com/groups/1010161159702776/permalink/1068084777243747/"
-                    target="_blank">Yamoussa</a> : propose des samoussas fait maison</li>
-                <li>L'antre de la tortue : propose des articles de décorations.</li>
-                <li><a href="https://www.facebook.com/julienMontauban65/" target="_blank">Couteaux de l'Ouzom</a> :
-                  propose des couteaux.</li>
-                <li><a href="https://www.facebook.com/lessavonsdelisarce/" target="_blank">Les savons de Lisarce</a> :
-                  propose des savons à l'huile végétale bio et lait d'ânesse.</li>
-                <li>Vente des productions des élèves des écoles primaires et maternelles de Bruges-Capbis-Mifaget !!!
-                </li>
-              </ul>
-              <p>De nombreuses annimations et un snack tout au long de la journée.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary rounded-pill p-0 px-4" data-bs-dismiss="modal"
-                aria-label="Close">Quitter</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <!--event 2-->
       <!-- <section itemscope itemtype="http://schema.org/Event" id="event3" class="col p-0 py-2 p-md-2 section">
         <img src="./asset/img/carnet-table.jpg" alt="cahier" class="m-0 p-0 w-100 backGround" />
@@ -577,10 +576,18 @@
         <div class="container-fluid text-center m-0 p-0">
           <div class="row m-0 p-0">
             <div class="col-6 text-nowrap m-0 p-0">
-              Président :
+              Présidente :
             </div>
             <div class="col-6 m-0 p-0">
-              Cyril Micallef
+              Emmanuelle Salles
+            </div>
+          </div>
+          <div class="row m-0 p-0">
+            <div class="col-6 text-nowrap m-0 p-0">
+              Vice-Président :
+            </div>
+            <div class="col-6 m-0 p-0">
+              Ugo Marchal
             </div>
           </div>
           <div class="row m-0 p-0">
